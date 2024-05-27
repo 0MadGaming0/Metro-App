@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import MetroApp from './components/MetroApp';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AboutUs from './components/AboutUs';
+import Services from './components/Services';
+import Contacts from './components/Contacts';
+import FAQ from './components/FAQ';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<MetroApp/>}/>
+      <Route path="/about" element={<AboutUs/>}/>
+      <Route path="/service" element={<Services/>}/>
+      <Route path="/contact" element={<Contacts/>}/>
+      <Route path="/FAQ" element={<FAQ/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -7,7 +7,6 @@ const Navbar = () => {
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="https://static.vecteezy.com/system/resources/previews/018/859/280/non_2x/train-rail-logo-symbol-flat-color-illustration-locomotive-vector.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
-                            Bootstrap
                     </a>
 
                     <a class="navbar-brand" href="#">Metro App</a>
